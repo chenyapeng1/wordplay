@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    background-image: url("../img/qiang.png");
+    background-size:contain; 
+}
+.screen{
+    width: 100%;
+    height: 7.94rem;
+    background-image: url("../img/scen.png");
+    background-size:contain; 
+    position: relative;
+}
+.screen .letter{
+    width: 0.53rem;
+    height: 0.77rem;
+    position: absolute;
+    top: 0.9rem;
+    left: 0;
+    background-size: contain;
+}
+.screen .yun{
+    width: 4rem;
+    height: 0.45rem;
+    background: url("../img/clound_06.png");
+    background-size: contain;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    animation: yun 1s infinite alternate linear;
+    z-index: 2;
+}
+@keyframes yun{
+    from{
+        left:1rem;
+    }
+    to{
+        left: 3rem;
+    }
+}
+.musics{
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url("../img/Apause.png");
+    background-size: contain;
+    position: absolute;
+    top: 0.62rem;
+    right: 0.24rem;
+}
+.musicss{
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url("../img/Aplay.png");
+    background-size: contain;
+    position: absolute;
+    top: 0.62rem;
+    right: 0.24rem;
+}
+.three{
+    width: 1.24rem;
+    height: 4.24rem;
+    position: absolute;
+    top: 2.5rem;
+    right: 0.24rem;
+}
+.life{
+    width: 100%;
+    height: 1.37rem;
+    background: url("../img/Health.png") no-repeat;
+    background-size: contain;
+    font-size: 0.4rem;
+    line-height: 0.9rem;
+    text-align: center;
+}
+.fraction{
+    width: 100%;
+    height: 1.62rem;
+    background: url("../img/Point.png") no-repeat;
+    background-size: contain;
+    font-size: 0.4rem;
+    line-height: 0.9rem;
+    text-align: center;
+}
+.goon1{
+    width: 100%;
+    height: 1.37rem;
+    background: url("../img/Pause.png") no-repeat;
+    background-size: contain;
+}
+.goon2{
+    width: 100%;
+    height: 1.37rem;
+    background: url("../img/Play.png") no-repeat;
+    background-size: contain;
+}
+.keybox{
+    width: 100%;
+    height: 5.22rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: url("../img/Key.png");
+    background-size:contain; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nei{
+    width: 7.02rem;
+    height: 4rem;
+    background-color: rgba(35, 78, 210, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+}
+.nei .son{
+    width: 0.5rem;
+    height: 0.8rem;
+    background: url("../img/Letter.png");
+    background-size:contain; 
+    font-size: 0.32rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 0.8rem;
+    margin-left: 0.19rem;
+    margin-top: 0.28rem;
+}
+.nei .son:nth-child(11){
+    margin-left: 0.5rem;
+}
+.nei .son:nth-child(20){
+    margin-left: 1.19rem;
+}
